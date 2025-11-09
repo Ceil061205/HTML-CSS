@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简介卡片</title>
+  <style>
+    /* 全局样式重置（避免默认边距） */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 页面居中（让卡片在屏幕中间） */
+    body {
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* 卡片样式 */
+    .card {
+      width: 300px;
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      /* 阴影增强立体感 */
+      transition: transform 0.3s ease;
+      /* 过渡动画 */
+    }
+
+    /* 卡片hover效果 */
+    .card:hover {
+      transform: scale(1.05);
+      /* 放大1.05倍 */
+    }
+
+    /* 头像样式 */
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      /* 圆形头像 */
+      object-fit: cover;
+      /* 避免图片拉伸 */
+      border: 3px solid #42b983;
+      /* 绿色边框 */
+      margin-bottom: 15px;
+    }
+
+    /* 姓名样式 */
+    .name {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    /* 简介样式 */
+    .intro {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      /* 行高增强可读性 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="https://picsum.photos/200" alt="个人头像" class="avatar">
+    <h2 class="name">张三</h2>
+    <p class="intro">前端开发学习者，热爱技术、喜欢分享。擅长HTML、CSS、JavaScript，致力于打造美观且实用的网页。</p>
+  </div>
+</body>
+
+</html>

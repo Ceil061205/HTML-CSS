@@ -1,0 +1,6 @@
+/* 可以通过@import引入其他的css资源 url是css的函数 */
+@import url(./style.css);
+@import url(./test.css);
+
+/* 也可以不加url */
+/* @import './test.css' */

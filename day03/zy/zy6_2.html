@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>响应式图文卡片列表</title>
+  <style>
+    /* 全局样式重置：清除默认边距、统一盒模型 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Microsoft YaHei", sans-serif;
+      /* 统一字体 */
+    }
+
+    /* 页面背景与容器居中 */
+    body {
+      background-color: #f8f9fa;
+      padding: 40px 20px;
+      /* 上下内边距，左右留空白 */
+    }
+
+    /* 标题样式 */
+    .section-title {
+      text-align: center;
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    /* 卡片列表容器：Grid布局核心 */
+    .card-list {
+      max-width: 1200px;
+      /* 限制最大宽度，避免PC端过宽 */
+      margin: 0 auto;
+      /* 水平居中 */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      /* 响应式列数：最小280px/列，自动填充 */
+      gap: 25px;
+      /* 卡片之间的间距（水平+垂直） */
+    }
+
+    /* 单个卡片样式 */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      /* 圆角美化 */
+      overflow: hidden;
+      /* 裁剪溢出内容（如图片圆角） */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      /* 轻微阴影，增强层次感 */
+      transition: all 0.3s ease;
+      /* 过渡动画：hover时平滑变化 */
+    }
+
+    /* 卡片hover交互效果 */
+    .card:hover {
+      transform: translateY(-8px);
+      /* 向上浮8px */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      /* 阴影加深，增强立体感 */
+    }
+
+    /* 卡片图片样式 */
+    .card-img {
+      width: 100%;
+      /* 图片宽度自适应卡片 */
+      height: 180px;
+      /* 固定图片高度，保证统一 */
+      object-fit: cover;
+      /* 图片裁剪填充，不拉伸（关键） */
+    }
+
+    /* 卡片内容区域（文字部分） */
+    .card-content {
+      padding: 20px;
+      /* 内边距，避免文字贴边 */
+    }
+
+    /* 卡片标题 */
+    .card-title {
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      /* 不换行 */
+      overflow: hidden;
+      /* 隐藏溢出文字 */
+      text-overflow: ellipsis;
+      /* 溢出部分显示省略号 */
+    }
+
+    /* 卡片简介 */
+    .card-desc {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      /* 行高，增强可读性 */
+      margin-bottom: 15px;
+      display: -webkit-box;
+      /* 适配webkit内核浏览器 */
+      -webkit-line-clamp: 2;
+      /* 限制显示2行 */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      /* 溢出隐藏 */
+    }
+
+    /* 卡片日期 */
+    .card-date {
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="section-title">最新资讯</h2>
+
+  <div class="card-list">
+    <!-- 卡片1 -->
+    <div class="card">
+      <img src="https://picsum.photos/600/400?random=1" alt="前端技术发展趋势" class="card-img">
+      <div class="card-content">
+        <h3 class="card-title">2025年前端技术发展趋势：AI与跨端开发成主流</h3>
+        <p class="card-desc">随着大模型技术普及，AI辅助开发工具将大幅提升效率，跨端框架（如Flutter、React Native）将进一步统一移动端与PC端开发。</p>
+        <span class="card-date">2025-11-09</span>
+      </div>
+    </div>
+
+    <!-- 卡片2 -->
+    <div class="card">
+      <img src="https://picsum.photos/600/400?random=2" alt="CSS Grid布局教程" class="card-img">
+      <div class="card-content">
+        <h3 class="card-title">CSS Grid布局实战：3分钟实现响应式卡片列表</h3>
+        <p class="card-desc">Grid布局是CSS3核心布局技术，支持二维布局（行+列），比Flex更适合复杂排版，一行代码即可实现响应式适配。</p>
+        <span class="card-date">2025-11-08</span>
+      </div>
+    </div>
+
+    <!-- 卡片3 -->
+    <div class="card">
+      <img src="https://picsum.photos/600/400?random=3" alt="Web性能优化技巧" class="card-img">
+      <div class="card-content">
+        <h3 class="card-title">Web性能优化实战：从10秒加载到1秒的秘诀</h3>
+        <p class="card-desc">通过图片压缩、代码分割、缓存策略、CDN加速等手段，可大幅提升网页加载速度，优化用户体验与SEO排名。</p>
+        <span class="card-date">2025-11-07</span>
+      </div>
+    </div>
+
+    <!-- 卡片4 -->
+    <div class="card">
+      <img src="https://picsum.photos/600/400?random=4" alt="语义化HTML实践" class="card-img">
+      <div class="card-content">
+        <h3 class="card-title">语义化HTML的5个核心原则与实际应用</h3>
+        <p class="card-desc">合理使用header、nav、article等语义标签，不仅提升代码可读性，还能优化SEO和无障碍访问，是前端开发的基础素养。</p>
+        <span class="card-date">2025-11-06</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
