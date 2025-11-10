@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p{
+      font-size: 30px;
+      /* em相对自己字体的大小 */
+      text-indent: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h2>比去</h2>
+  <p>
+    一般我们在两种常见的情况下会倾向于这样做：
+  
+    为了过滤一个列表中的项目 (比如 v-for="user in users" v-if="user.isActive")。在这种情形下，请将 users 替换为一个计算属性 (比如 activeUsers)，让其返回过滤后的列表。
+    
+    为了避免渲染本应该被隐藏的列表 (比如 v-for="user in users" v-if="shouldShowUsers")。这种情形下，请将 v-if 移动至容器元素上 (比如 ul、ol)。
+</p>
+</body>
+</html>

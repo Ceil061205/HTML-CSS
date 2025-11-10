@@ -1,0 +1,4 @@
+/* 一个网站只设置一次 可以有多个 防止不适配 */
+body {
+  font-family: Arial, sans-serif, 'Times New Roman', Times, serif, 'Courier New', Courier, monospace;
+}

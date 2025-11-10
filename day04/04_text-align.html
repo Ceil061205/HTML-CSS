@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+    .box{
+      background-color: #f00;
+      color: white;
+      /* left right center justify两端对齐 */
+      text-align: center;
+  }
+  .pic{
+    /* 图片居中显示 */
+    text-align: center;
+  }
+  img{
+    width: 100px;
+    height: 100px;
+  }
+  .box1{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: pink;
+   
+
+  }
+  .content{
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    /* 对于块级元素的居中 */
+   margin: 0 auto;
+  }
+
+  .box2{
+    width: 200px;
+    background-color: #f00;
+    /* justify最后一行是无效的 */
+    text-align: justify;
+    /* 单独给最后一行设置 */
+    text-align-last: justify;
+  }
+</style>
+</head>
+<body>
+  <!-- text-align 行内级元素的对齐方式 div是块级无效(改成行内块就可) -->
+   <div class="box">div</div>
+
+   <div class="pic">
+    <img src="../image/huoxing.png" alt="">
+   </div>
+
+   <div class="box1">   
+    <div class="content">
+    con
+   </div>
+  </div>
+
+  <div class="box2">
+    <!-- div的默认text-align:left  -->
+    No one’s born being good at all things. You become good at things through hard work. You’re not a varsity athlete the
+    first time you play a new sport. You don’t hit every note the first time you sing a song.You’ve got to practice. The
+    same principle applies to your schoolwork. You might have to do a math problem a few times before you get it right. You
+    might have to read something a few times before you understand it.You definitely have to do a few drafts of a paper
+    before it’s good enough to hand in.
+</div>
+</body>
+</html>
