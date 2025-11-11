@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 后代选择器 */
+    /* home里面的span元素 */
+    .home span{
+      color: red;
+    }
+    /* 直接子代选择器 */
+    /* home里面的直接子代span元素 */
+    .home > span{
+      color: rgb(0, 255, 157);
+    }
+  </style>
+</head>
+<body>
+  <div class="home">
+    <span >hhhhsdhdjhh</span>
+    <div class="box">
+      <span class="home-item">hhhh</span>
+    </div>
+
+    <div class="box1">
+      <div class="content">
+        <div class="box">
+          <p>还不是</p>
+          <span class="home-item">hhhh</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

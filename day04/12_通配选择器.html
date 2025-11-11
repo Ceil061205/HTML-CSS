@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* div,p{
+      color: red;
+    } */
+     /* 匹配所有 把所有用的和没用的都编辑一遍,性能低 */
+     *{
+      color: red;
+     }
+     /* 更推荐如下 */
+     body,p,div{
+      background-color: pink;
+      margin: 0;
+     }
+     /* body浏览器设置默认有margin这个时候要重置 */
+
+  </style>
+</head>
+<body>
+  <div>11</div>
+  <p>222</p>
+  <!-- p里面不能放div -->
+  <p>233</p>
+</body>
+</html>

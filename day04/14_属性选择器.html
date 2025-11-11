@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 属性选择器 */
+    [title] {
+      color: red;
+    }
+
+    [title="div"] {
+      background-color: yellow;
+
+    }
+    /* 
+    [attr*=val] 选择属性值中包含指定子串的元素
+    [attr^=val] 选择属性值以指定子串开头的元素
+    [attr$=val] 选择属性值以指定子串结尾的元素
+    [attr~=val] 选择属性值中包含指定单词的元素
+    [attr|=val] 选择属性值以指定子串开头的元素，且后面紧跟一个短横线（-）
+    [attr!=val] 选择属性值不等于指定值的元素
+    [attr=val] 选择属性值等于指定值的元素
+    [attr] 选择具有指定属性的元素
+    [attr|="val"] 选择属性值等于指定值的元素，且后面紧跟一个短横线（-）
+    */
+  </style>
+</head>
+<body>
+  <div>111</div>
+  <div title="div">222</div>
+  <p>pppp</p>
+  <h2 title="h2">hhh</h2>
+</body>
+</html>
