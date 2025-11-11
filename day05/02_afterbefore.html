@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .before,
+    .after {
+      background-color: red;
+    }
+    .box2::before,
+    .box2::after {
+      content: "233";
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span class="before">aaa</span>
+    div
+    <span class="after">
+      aaa
+    </span>
+  </div>
+  <div class="box2">
+    div
+  </div>
+</body>
+</html>
