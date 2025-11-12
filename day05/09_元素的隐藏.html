@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      /* 不占据空间 */
+      display: none;
+    }
+    .box1{
+      /* 占据空间 */
+      visibility: hidden;
+    }
+    .box2{
+      /* 占据空间 不会影响子元素*/
+      /* alpha 透明度 0为完全透明 */
+      /* color: rgba(255, 0, 0,0); */
+      background-color: transparent;/* 与rgba(0000)相同 */
+    }
+    .box3{
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">jjjj</div>
+  <div>ddd</div>
+  <div class="box1">sss</div>
+  <div>sss</div>
+  <div class="box2">salss</div>
+  <div>jjj</div>
+  <div class="box3">ss</div>
+</body>
+</html>

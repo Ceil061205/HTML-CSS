@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 继承性：给顶层元素设置属性所有后代元素都有了该属性  font text 文本字体相关的 color cursor  */
+    /* 继承过来的属性是计算值 而不是设置值 */
+    .box{
+      color: red;
+      /* 浏览器本身字体16px 2em即为2倍的。。。 */
+      font-size: 2em;
+
+        
+      /* 强制继承border本身没有继承性 */
+      border: 2px solid purple;
+    }
+    p{
+      /* 强制继承 */
+      border: inherit;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>kkkk</p>
+    <span>kkkk</span>
+  </div>
+</body>
+</html>

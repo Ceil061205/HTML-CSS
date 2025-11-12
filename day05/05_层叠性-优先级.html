@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 权重相加不进位 */
+    .box{
+      color: red !important; /*10000*/
+    }
+    #box{
+      /* id选择器100 */
+      color: aqua;
+    }
+    .box{
+      /* 类选择器 属性 伪类 10 */
+      color: black;
+    }
+    div{
+      /* 元素选择器 伪元素 1 */
+      color: beige;
+    }
+    *{
+      /* 统配选择器 0 */
+      color: antiquewhite;
+    }
+  </style>
+</head>
+<body>
+  <!-- 内联样式 1000 -->
+  <div class="box" id="box" style="width: 100px;">
+    sss
+  </div>
+</body>
+</html>

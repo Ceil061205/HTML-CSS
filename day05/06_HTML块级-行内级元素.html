@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      /*  */
+      /*因为div的 margin:auto 所有即使是设置宽高之后也能独占一行*/
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+    span{
+      /* 宽高无效 */
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+    /* img是行内替换元素 和其他行内元素在同一行显示 可设置宽高*/
+    img{
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- 强调一个元素很重要 独占一行 h p div 可以设置宽高 高度默认由内容撑开 -->
+  <div>块级</div>
+  <!-- span img a 内容某个细节的特殊描述，元素在同一行显示 不可以设置宽高 宽高由内容决定 -->
+  <span>行内</span>
+
+  <img src="../image/hot.png" alt="">
+</body>
+</html>
