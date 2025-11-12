@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      /* 去除原有的间距 */
+      font-size: 0;
+    }
+    .box {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      margin-right: 20px;
+      /* margin-bottom:20px ; */
+    }
+
+    .box2 {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      margin-left: 10px;
+      background-color: blue;
+      /* 两个相邻的上下会折叠 */
+      /* margin-top: 20px; */
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box2"></div>
+</body>
+</html>

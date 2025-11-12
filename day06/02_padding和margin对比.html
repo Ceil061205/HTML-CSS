@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* margin设置各个盒子之间的距离(兄弟间)  padding内容距离边框(父子间) */
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #b959af;
+      /* 标准盒模型padding会将盒子撑开 */
+
+      /* 怪异盒模型 */
+      /* padding-left:20px ;
+      box-sizing: border-box; */
+
+      /* bfc */
+      /* overflow: auto; */
+
+     
+    }
+
+    .co {
+      width: 100px;
+      height: 100px;
+      background-color: #007bff;
+      margin-left: 30px;
+      /* 要开bfc才有效 */
+      /* margin-top: 100px; */
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="co"></div>
+  </div>
+</body>
+</html>

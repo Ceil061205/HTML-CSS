@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      /* 2加上border */
+      /* border: 1px solid black; */
+
+      /* 3.开启外层盒子的BFC */
+      overflow: auto;
+
+    }
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      /* 左右间不会传递 */
+      margin-left: 20px;
+
+      /* 上下会传递 使父元素距离上级元素有了距离 */
+      /* 解决:1用padding(再开启怪异盒模型)  */
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="box2"></div>
+  </div>
+  
+</body>
+</html>
