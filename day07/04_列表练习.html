@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    ul > li > a{
+      display: inline-block;
+    }
+    ul > li > a:hover{
+      color: #f00;
+    }
+    div{
+      display: inline-block;
+    }
+    span{
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      color:#888;
+    }
+    /* i是行内非替换元素 */
+    i{
+      position: relative;
+      top: 2px;
+      left: 4px;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-size: 16px;
+      background-image: url(../image/hot.png);
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <a href="#">
+        <span>1</span>
+        <div>888888888</div>
+        <i class="icon"></i>
+    </a>
+  </li>
+    <li></li>
+  </ul>
+</body>
+</html>
