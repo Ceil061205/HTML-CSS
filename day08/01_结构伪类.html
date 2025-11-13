@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul li:nth-child(2n){
+      color: aquamarine;
+    }
+    ul li:nth-child(2n+1){
+      color: aquamarine;
+    }
+    /* 倒数第二个 */
+    ul li:nth-last-child(2){
+      color: aliceblue;
+    }
+    /* 倒数后2个 */
+    ul li:nth-last-child(-n+2){
+      color: aliceblue;
+    }
+  
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li>111</li>
+    <li>11</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+</html>
