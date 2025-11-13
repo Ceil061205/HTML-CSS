@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: palegoldenrod;
+      /* 怪异盒模型*/
+      box-sizing: border-box;
+      padding: 20px;
+    }
+    .box2{
+      width: 100px;
+      height: 100px;
+      background-color: rgb(105, 101, 51);
+      /* 默认值content-box */
+      box-sizing:content-box;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">111</div>
+  <div class="box2">11</div>
+</body>
+</html>

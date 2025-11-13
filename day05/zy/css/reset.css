@@ -1,0 +1,10 @@
+    /* a重置 */
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 12px;
+    }
+                body {
+                  margin: 0;
+                  background-color: #f5f5f5;
+                }

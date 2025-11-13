@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    body{
+      text-align: center;
+    }
+    .item{
+      display: inline-block;
+      width: 234px;
+      height: 300px;
+      background-color: #fff;
+      text-align: center;
+      padding: 25px 10px;
+      box-sizing: border-box;
+    }
+    .item:hover{
+      box-shadow: 0 5px 10px 5px rgba(0,0,0,0.1);
+    }
+    img{
+      width: 160px;
+      height: 160px;
+    }
+    p{
+      color: #999;
+      /* 单行显示省略号 */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* p宽度默认auto width100% overflowhidden */
+      /* inlin-block 宽度是auto */
+      /* 多行 */
+      /* display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; */
+    }
+    .price{
+      color: #ff9700;
+    }
+    .new{
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <!-- 行内块级里面也可以随便放 -->
+  <a class="item" href="#">
+<!-- 网络请求图片加上这个属性 referrerpolicy="no-referrer" -->
+      <img src="../image/huoxing.png" referrerpolicy="no-referrer" alt="">
+      <h3>哈哈哈哈</h3>
+      <p>hhhhh哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈^_^哈哈哈</p>
+      <div>
+        <span class="price">2399</span>
+        <span class="new">2666</span>
+      </div>
+  </a>
+</body>
+</html>
