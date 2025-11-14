@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 特定：position设置为absolute/fixed后 可以随意设置宽高，无设置则有内容决定，不再严格区分块行内元素，不再向父汇报宽高（div为父元素，如果父元素没设置宽高则会消失，内部元素依旧按照标准流排布 */
+    /*  */
+    .box{
+      width: 800px;
+      height: 600px;
+      background-color: #1dc468;
+      /* 是定位元素也不脱离文档流 */
+      position: relative;
+    }
+    /* 脱离标准流 */
+    strong{
+      position: absolute;
+      /* 相对于最邻近的定位祖先元素，在没有祖先元素定位的情况下相对视口 */
+      right: 0;
+      top: 0;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="box">
+    <span>span</span>
+    <strong>strong</strong>
+    <img src="../image/hot.png" alt="">
+  </div>
+</body>
+</html>
