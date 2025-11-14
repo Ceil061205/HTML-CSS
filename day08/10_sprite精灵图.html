@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 减少网页的http请求数量，加快网页响应速度，减轻服务器压力 减小图片总大小。解决了图片命名的困扰 -->
+   <style>
+    div{
+      background: #333;
+    }
+    .topbar{
+      background-image: url(../image/topbar.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+    }
+    i.hot-icon{
+      background-position: -192px 0;
+      /* i是行内元素 */
+      width: 26px;
+      height: 13px;
+    }
+    i.logo{
+      background-position: 0 -19px;
+      width: 157px;
+      height: 33px;
+    }
+   </style>
+</head>
+<body>
+<div>
+    <i class="topbar hot-icon"></i>
+    <i class="topbar logo"></i>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: 'icon';
+      src: url('./fonts/iconfont.ttf');
+    }
+    .icon{
+      font-family: 'icon';
+      font-style: normal;
+    }
+    .music::before{
+      content: "\e69f";
+    }
+    .ic{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <i class="icon ic">&#xe631;</i>
+  <i class="icon">&#xe624;</i>
+
+  <!-- 不用字符实体 -->
+   <i class="ic music"></i>
+</body>
+</html>

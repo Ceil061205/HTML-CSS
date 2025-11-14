@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* relative微调 */
+    strong{
+      /* 相对定位依旧是在标准流里面 */
+      position: relative;
+      /* 相对自己原来位置(不会影响其他元素) */
+      left: 20px;
+      bottom: 20px;
+    }
+    div{
+      font-size: 20px;
+    }
+    span{
+      font-size: 12px;
+      position: relative;
+      bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <span>
+    sapn
+  </span>
+  <div>div</div>
+  <strong>shsss</strong>
+  <div>3989 3<span>2</span></div>
+</body>
+</html>

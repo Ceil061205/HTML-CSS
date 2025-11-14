@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   @font-face {
+      font-family: '自定义字体名'; /* 替换为你的字体名称 */
+      src: url('./fonts/1.eot'); /* IE9 兼容模式 */
+      src: url('./fonts/1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('./fonts/1.woff2') format('woff2'), /* 现代浏览器优先支持 */
+          url('./fonts/1.woff') format('woff'), /* 主流浏览器支持 */
+          url('./fonts/1.ttf') format('truetype'); /*  fallback 格式 */
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* 应用字体 */
+    .box {
+      font-family: '1', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">div</div>
+</body>
+</html>
