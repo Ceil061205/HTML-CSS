@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   /* 兄弟关系在后越大 */
+   /* 每一个层级进行比较,不能越级,越级无意义 */
+    .item {
+      position: fixed;
+      width: 100px;
+      height: 100px;
+      left: 0;
+      top: 0;
+      background-color: red;
+
+    }
+
+    .box2 {
+      left: 20px;
+      top: 20px;
+      background-color: blue;
+      z-index: -1;
+
+    }
+
+    .box3 {
+      left: 40px;
+      top: 40px;
+      background-color: green;
+    }
+    .info{
+      position: absolute;
+      /* width: 100px;
+      height: 100px;
+      background-color: yellow; */
+      z-index: 999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="item box1">1</div>
+  <div class="container">
+    <div class="item box2">
+      <div class="info">hhhh</div>
+    </div>
+  </div>
+  <div class="item box3">3</div>
+</body>
+
+</html>

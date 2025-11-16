@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- dib难对齐 -->
+   <style>
+    body{
+      margin: 0;
+      overflow: hidden;
+    }
+    /* float会脱离标准流 right left null*/
+    /* 规则一: 普通元素层级 < 浮动 < 定位*/
+    /* 规则二: 浮动元素不会超出包含块*/
+    /* 规则三 */
+    .box{
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      margin: 0 auto;
+    }
+    .item1{
+      float: left;
+      height: 100px;
+      background-color: red;
+    }
+    .item2{
+      float: right;
+      height: 100px;
+      background-color: blue;
+    }
+   </style>
+</head>
+<body>
+  <div class="box">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+  </div>
+</body>
+</html>

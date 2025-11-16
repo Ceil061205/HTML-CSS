@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 重置代码 */
+    a{
+      text-decoration: none;
+      color: #333;
+
+    }
+    /* 公共css */
+    .sprite_01{
+      background-image: url(../image/wyysprite01.png);
+      display: inline-block;
+    }
+    .sprite_02{
+      background-image: url(../image/wyysprite02.png);
+      display: inline-block;
+    }
+    .sprite_02_icon-music{
+      width: 14px;
+      height: 11px;
+      background-position: 0 -24px;
+    }
+    .sprite_02_icon-play{
+      width: 16px;
+      height: 17px;
+      background-position: 0 0;
+    }
+      
+    .item {
+      width: 140px;
+      height: 200px;
+      margin: 0 auto;
+    }
+    .item .top{
+      background-color: red;
+      position: relative;
+
+    }
+    .item .top img{
+      /* 将图片多出来的区域去除 */
+      /* vertical-align: top; */
+      display: block;
+    }
+    .item .top .cover{
+      position: absolute;
+      /* 宽高跟父元素一样 */
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      /* background-image: url(../image/wyysprite01.png); */
+      background-position: 0 0;
+    }
+    .item .top .info{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 27px;
+      padding-left: 10px;
+      line-height: 27px;
+
+      font-size: 12px;
+      color: #ccc;
+
+      background-image: url(../image/wyysprite01.png);
+      background-position: 0 -537px;
+
+    }
+
+    .item .top .info .icon-music{
+      position: relative;
+      top: 1px;
+      display: inline-block;
+      /* width: 14px;
+      height: 11px; */
+      /* background-image: url(../image/wyysprite02.png); */
+      /* background-position: 0 -24px; */
+    }
+    .item .top .info .icon-play{
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      right: 10px;
+      /* width: 16px; */
+      /* height: 17px; */
+      /* background-image: url(../image/wyysprite02.png); */
+      /* background-position: 0 0; */
+
+    }
+
+    .num{
+      /* 兄弟元素之间的间距用mrg */
+      margin-left: 4px;
+    }
+
+    .buttom{
+      display: block;
+      font-size: 14px;
+
+    }
+    .bottom:hover{
+      text-decoration:  underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="item">
+    <div class="top">
+      <img src="../image/wyy.jpg" alt="">
+      <a href="#" class="cover sprite_01"></a>
+      <div class="info">
+        <i class="sprite_02 sprite_02_icon-music icon-music"></i>
+        <span class="num">62w</span>
+        <i class="sprite_02 sprite_02_icon-play icon-play"></i>
+      </div>
+    </div>
+    <a href="#" class="bottom">
+      哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+    </a>
+  </div>
+</body>
+</html>
