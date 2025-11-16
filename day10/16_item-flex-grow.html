@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 放大 */
+    .container {
+      width: 500px;
+      height: 500px;
+      background-color: #bd4545;
+
+      display: flex;
+      align-items: flex-start;
+
+      
+
+    }
+
+    .item {
+      width: 120px;
+      height: 120px;
+    }
+    /* 默认是0 */
+    /* 全是1则等分  */
+    .item1 {
+      flex-grow: 1;
+      /* 如果有max不能超过这个数值 */
+      max-width: 50px;
+    }
+    .item2 {
+      /* 比例分配占满 */
+      /* 总和>1 按比例 */
+      flex-grow: 2;
+    }
+    .item3 {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+
+
+  </div>
+  <script src="./js/itemRandomColor.js"></script>
+</body>
+  

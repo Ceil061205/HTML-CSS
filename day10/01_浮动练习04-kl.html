@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content {
+      width: 1190px;
+
+      margin: 0 auto;
+      background-color: #0c8101;
+      /* 子元素开浮动后高度不会向父汇报 */
+      height: 1000px;
+    }
+    .wrapper{
+      margin-right: -10px;
+    }
+    .item{
+      width: 290px;
+      background-color: #9e1616;
+      margin-bottom: 10px;
+      /* 浮动 */
+      float: left;
+      margin-right: 10px;
+    }
+    .item.left{
+      height: 370px;
+    }
+    .item.right{
+      height: 180px;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="wrapper">
+      <div class="item left"></div>
+      <div class="item left"></div>
+      <div class="item right"></div>
+      <div class="item right"></div>
+      <div class="item right"></div>
+      <div class="item right"></div>
+    </div>
+  </div>
+</body>
+</html>

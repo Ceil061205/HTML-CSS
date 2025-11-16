@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content {
+      width: 1190px;
+
+      margin: 0 auto;
+      background-color: #0c8101;
+      /* 方案一设置高度 */
+      /* 子元素开浮动后高度不会向父汇报 */
+      /* height: 1000px; */
+    }
+
+    .wrapper {
+      margin-right: -10px;
+    }
+
+    .item {
+      width: 290px;
+      background-color: #9e1616;
+      margin-bottom: 10px;
+      /* 浮动 */
+      float: left;
+      margin-right: 10px;
+    }
+
+    .item.left {
+      height: 370px;
+    }
+
+    .item.right {
+      height: 180px;
+    }
+    /* 会出现高度塌陷问题 */
+    .other{
+      height: 100px;
+      background-color: #817b01;
+    }
+    /* .line{ */
+      /* height: 9px;
+      background-color: #000000; */
+      /* 方案2 */
+      /* 清除浮动: 元素可以移动到浮动元素的下面 */
+      /* 只用这个就行 */
+      /* clear: both;
+    } */
+     .clear-fix::after{
+        content: "";
+        display: block;
+        clear: both;
+
+        /* 兼容性写以下代码 */
+        height: 0;
+        visibility: hidden;
+     }
+     .clear-fix{
+      /* ie67兼容性写法 */
+      zoom: 1;
+     }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="wrapper clear-fix">
+      <div class="item left"></div>
+      <div class="item left"></div>
+      <div class="item right"></div>
+      <div class="item right"></div>
+      <div class="item right"></div>
+      <div class="item right"></div>
+
+      <!-- <div class="line"></div> -->
+    </div>
+  </div>
+  <div class="other"></div>
+</body>
+
+</html>

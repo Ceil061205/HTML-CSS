@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 基础尺寸 */
+    .container {
+      width: 500px;
+      height: 500px;
+      background-color: #bd4545;
+
+      display: flex;
+
+    }
+
+    .item {
+      width: 120px;
+      height: 120px;
+      /* flex是 [grow] shrink basis 的缩写 */
+      /* none: 0 0 auto */
+      /* auto: 1 1 auto */
+      flex: none;
+      flex: auto;
+      /* 1个数字无单位是放大 */
+      flex: 1;
+      /* 双第一个必须是无单位 */
+      flex: 1 1;
+      flex: 1 10px;
+    }
+    
+
+    
+ 
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2abc why why why hahhahaha</div>
+    <div class="item item3">3</div>
+
+
+
+  </div>
+  <script src="./js/itemRandomColor.js"></script>
+</body>
+  

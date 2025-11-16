@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      background-color: #bd4545;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      /* 多行对齐方式和jstc相似jstc是单行 alitms这个是交叉轴上的jstc*/
+      /* align-content: space-between; */
+      /* align-content: flex-start;
+      align-content: flex-end;*/
+       align-content: center; 
+     /* align-content: space-around;
+      align-content: space-evenly; */
+      /* 在没有高度情况下 */
+      /* align-content: stretch; */
+
+      
+    }
+
+    .item {
+      width: 160px;
+      height: 100px;
+      background-color: #ed6565;
+      margin:0 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+
+
+  </div>
+  <script src="./js/itemRandomColor.js"></script>
+</body>
+
+</html>

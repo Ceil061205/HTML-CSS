@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 主轴行 交叉轴 */
+    .box {
+      display: flex;
+      flex-direction: row; /* 主轴为行方向，交叉轴为列方向 */
+      background-color: pink;
+      width: 200px;
+      height: 200px;
+      /* 不设置则会压缩到一行 */
+      flex-wrap: wrap; 
+    }
+    .item{
+      width: 60px;
+      height: 60px;
+      background-color: #39bc62;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+</body>
+</html>

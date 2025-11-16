@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      background-color: #bd4545;
+      /* 一行放不下则压缩 width和已经设定好的没有必然关系 */
+      display: flex;
+      /* 默认nowarp不换行 */
+      flex-wrap: wrap;
+      /* wrap-reverse 从下面开始排布 */
+      /* 简写 flex-direction和flex-wrap的缩写 顺序无关 */
+      flex-flow: row wrap;
+    }
+    .item {
+      width: 120px;
+      height: 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+  </div>
+  <script src="./js/itemRandomColor.js"></script>
+</body>
+
+</html>
