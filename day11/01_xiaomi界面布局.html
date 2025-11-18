@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小米官网</title>
+  <link rel="stylesheet" href="./reset/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <style>
+    .dress{
+      background-color: pink;
+      margin-top: 30px;
+    }
+    .dress .header{
+      height: 58px;
+      /* 可以被继承 */
+      line-height: 58px;
+    }
+    /* 浮动是顶部对齐 */
+    .dress .header .left-area{
+      float: left;
+
+    }
+    .dress .header .right-area{
+      float: right;
+    }
+    .dress .header .left-area .item{
+      padding: 3px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="mi_wrapper dress">
+    <!-- 在浮动元素的父级元素上清除浮动 -->
+    <div class="header clear-fix">
+      <div class="left-area">
+        <h3 class="title">智能穿戴</h3>
+      </div>
+      <div class="right-area">
+        <a class="hot item" href="#">热门</a>
+        <a class="info item" href="#">穿戴</a>
+      </div>
+    </div>
+    <div class="list"></div>
+  </div>
+
+</body>
+</html>
