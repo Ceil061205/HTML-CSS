@@ -2,6 +2,10 @@
   width: 1226px;
   margin: 0 auto;
 }
+.kl_wrapper{
+  width: 1100px;
+  margin: 0 auto;
+}
 .clear-fix::after{
   content: "";
   display: block;

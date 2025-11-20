@@ -8,24 +8,69 @@
   <link rel="stylesheet" href="./css/common.css">
   <style>
     .dress{
-      background-color: pink;
       margin-top: 30px;
     }
     .dress .header{
       height: 58px;
-      /* 可以被继承 */
+      /* 可以被继承 居中 */
       line-height: 58px;
     }
     /* 浮动是顶部对齐 */
     .dress .header .left-area{
       float: left;
-
     }
     .dress .header .right-area{
       float: right;
+      font-size: 14px;
     }
-    .dress .header .left-area .item{
-      padding: 3px;
+    .dress .header .right-area .item{
+      margin-left: 15px;
+    }
+    .dress .header .right-area .item:hover,
+    .dress .header .right-area .item.active{
+      padding: 3px 0;
+      border-bottom: 2px solid red;
+      color: red;
+    }
+    /* 列表的内容 */
+    .dress .list{
+      margin-right: -14px;
+    }
+    .dress .list .item{
+      float: left;
+      /* position: relative;
+      top: 0; */
+
+      width: 234px;
+      height: 300px;
+      margin-right: 14px;
+      margin-bottom: 14px;
+      background-color: #0f9928;
+      transform: all 0.3s ease-in;
+    }
+    .dress .list .item1{
+      height: 614px;
+    }
+    .dress .list  .item9,
+    .dress .list  .item10{
+      height: 143px;
+    }
+    .dress .list .item:hover{
+      box-shadow: 0 15px 30px rgb(62, 25, 183);
+      position: relative;
+      /* top: -2px; */
+      transform: translate(0, -3px);
+    }
+    .dress .list .item a{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    .dress .list .item img{
+      display: block;
+      width: 160px;
+      height: 160px;
+      margin: 10px auto;
     }
 
   </style>
@@ -38,11 +83,26 @@
         <h3 class="title">智能穿戴</h3>
       </div>
       <div class="right-area">
-        <a class="hot item" href="#">热门</a>
+        <a class="hot active item" href="#">热门</a>
         <a class="info item" href="#">穿戴</a>
       </div>
     </div>
-    <div class="list"></div>
+    <div>
+      <ul class="list clear-fix">
+        <li class="item item1"><a href="#">
+          <img src="../image/xiaomi.webp" alt="">
+        </a></li>
+        <li class="item item2"><a href="#"><img src="../image/xiaomi.webp" alt=""></a></li>
+        <li class="item item3"><a href="#"><img src="../image/xiaomi.webp" alt=""></a></li>
+        <li class="item item4"><a href="#"><img src="../image/xiaomi.webp" alt=""></a></li>
+        <li class="item item5"><a href="#"><img src="../image/xiaomi.webp" alt=""></a></li>
+        <li class="item item6"><a href="#"><img src="../image/xiaomi.webp" alt=""></a></li>
+        <li class="item item7"><a href="#"><img src="../image/xiaomi.webp" alt=""></a></li>
+        <li class="item item8"><a href="#"><img src="../image/xiaomi.webp" alt=""></a></li>
+        <li class="item item9"><a href="#">9</a></li>
+        <li class="item item10"><a href="#">10</a></li>
+      </ul>
+    </div>
   </div>
 
 </body>

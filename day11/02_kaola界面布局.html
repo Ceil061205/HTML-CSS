@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./reset/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <style>
+    .sport{
+      margin-top: 20px;
+      background-color: pink;
+    }
+    .sport .item{
+      height: 541px;
+      float: left;
+    }
+    .sport .left{
+      width: 330px;
+      background-color: #b85757;
+    }
+    .sport .center{
+      width: 550px;
+      background-color: skyblue;
+    }
+    .sport .center-item{
+      float: left;
+      width: 275px;
+      height: 271px;
+      box-sizing: border-box;
+      border: 1px solid #000;
+      background-color: #a0b65b;
+      border-left: none;
+    }
+    .sport .center-item:nth-last-child(-n+2){
+      margin-top: -1px;
+    }
+    .sport .right{
+      width: 220px;
+      background-color: yellowgreen;
+    }
+    .sport .right .item{
+      float: left;
+      width: 220px;
+      height: 121px;
+      box-sizing: border-box;
+      border: 1px solid #000;
+      border-left: none;
+      margin-top: -1px;
+    }
+    .sport .right .header{
+      height: 61px;
+      margin-top: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="kl_wrapper sport">
+    <div class="item left"></div>
+    <div class="item center">
+      <div class="center-item"></div>
+      <div class="center-item"></div>
+      <div class="center-item"></div>
+      <div class="center-item"></div>
+    </div>
+    <div class="item right">
+      <div class="item header">h</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </div>
+</body>
+</html>
