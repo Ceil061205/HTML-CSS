@@ -1,0 +1,19 @@
+.wrapper_01{
+  width: 1200px;
+  margin: 0 auto;
+}
+.wrapper_02{
+  width: 980px;
+  margin: 0 auto;
+}
+.clear-fix::after{
+  content: "";
+  display: block;
+  clear: both;
+
+  height: 0;
+  visibility: hidden;
+}
+.clear-fix{
+  zoom: 1;
+}
