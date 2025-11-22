@@ -1,3 +1,7 @@
+body{
+  font-size: 12px;
+
+}
 .wrapper_01{
   width: 1200px;
   margin: 0 auto;
@@ -16,4 +20,13 @@
 }
 .clear-fix{
   zoom: 1;
+}
+.topbar_sprite{
+  display: inline-block;
+  background-image: url(../../image/topbar.png);
+}
+.topbar_icon_hot{
+  width: 28px;
+  height: 19px;
+  background-position: -190px 0;
 }
