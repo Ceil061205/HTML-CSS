@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+       position: relative;
+      /*2 display: flex; 
+      align-items: center;*/
+      height: 300px;
+      background-color: #ff0000;
+    }
+    .box1{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      /* 垂直水平居中 */
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: #03f537;
+    }
+    .box2{
+      background-color: #3700ff;;
+    }
+    .box3{
+      display: inline-block;
+      height: 100px;
+      background-color: #ffffff;
+      position: relative;
+      /* mt是相对父元素宽度 */
+      /* margin-top: 50%; */
+      top: 50%;
+      transform: translate(0,-50%);
+    }
+  </style>
+</head>
+<body>
+  <!-- 水平
+      1.行内元素:
+        设置父元素的text-align:center;
+      2.块级元素:
+        (有宽度)设置margin:0 auto; 
+      3.绝对定位:
+      元素有宽度的情况下，设置left:0;right:0;margin:0 auto;
+      4.flex布局:
+      父元素设置display:flex;justify-content:center;
+  -->
+      <!-- 垂直
+        1.绝对定位:
+        元素有高度的情况下，设置top:0;bottom:0;margin:auto 0;
+        弊端:必须使用定位,元素脱离文档流，会影响其他元素的布局,
+             必须给元素设置高度
+      
+      -->
+        <div class="container">
+          <div class="box1"></div>
+        </div>
+        <!-- 
+          2.flex布局:
+          父元素设置display:flex;align-items:center;
+          弊端:当前flex布局中所有的元素都会倍垂直居中
+              相对来说兼容性差基本可以忽略
+        -->
+          <!-- <div class="container">
+            <div class="box2">111</div>
+          </div> -->
+          <!-- 
+            3.top/translate
+          -->
+          <!-- <div class="container">
+            <div class="box3">1111</div>
+          </div> -->
+</body>
+</html>
