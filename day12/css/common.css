@@ -10,6 +10,10 @@ body{
   width: 980px;
   margin: 0 auto;
 }
+.wrapper_03{
+  width: 982px;
+  margin: 0 auto;
+}
 .clear-fix::after{
   content: "";
   display: block;
