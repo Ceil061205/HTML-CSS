@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background-color: #7ae872;
+    }
+    /* transition只能定义开始和结束状态 动画默认不能重复 某个属性被修改才会被触发 */
+    .box {
+      position: relative;
+      left: 0;
+      width: 200px;
+      height: 100px;
+      background-color: #c52020;
+      /* transition-property: transform,left; */
+      /* transition-property: all;
+      transition-duration: 2s;
+      transition-timing-function: ease-in; */
+      /* transition-delay: 2s; */
+      /* 简写属性 */
+      transition: all 2s ease-in 1s;
+    }
+    .container:hover .box{
+      left: 100px;
+      transform: translate(100px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+  </div>
+</body>
+</html>

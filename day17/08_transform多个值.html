@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 形变对行内非替换元素无效 */
+    .box {
+      font-style: italic;
+      width: 200px;
+      height: 100px;
+      background-color: blue;
+      margin: 0 auto;
+    }
+    /* 语法+以空格分隔 #是逗号 */
+    .box:hover {
+      transform:translate(30px) rotate(45deg) scale(0.8, 0.8) ;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    div
+  </div>
+</body>
+
+</html>

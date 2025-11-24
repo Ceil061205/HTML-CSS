@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
       text-align: center;
       padding-top: 200px;
     }
+
     .container {
       display: inline-block;
       border: 10px solid black;
@@ -17,16 +19,22 @@
       width: 200px;
       height: 100px;
       background-color: #a70000;
+      /* 修改当前元素的形变的原点位置 百分比也行 */
+      /* transform-origin: left top; */
+      transform-origin: 20px 20px;
     }
+
     .box:hover {
       /* 顺时针旋转90° 负是逆时针 */
-      transform: rotate(90deg);
+      transform: rotate(45deg) scale(0.5);
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <div class="box"></div>
   </div>
 </body>
+
 </html>

@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    body {
-      text-align: center;
-      padding-top: 200px;
-    }
     .container {
-      display: inline-block;
-      border: 10px solid black;
+      background-color: #7ae872;
     }
+    /* transition只能定义开始和结束状态 */
     .box {
+      position: relative;
+      left: 0;
       width: 200px;
       height: 100px;
-      background-color: #a70000;
+      background-color: #c52020;
     }
-    .box:hover {
-      /* 顺时针旋转90° 负是逆时针 */
-      transform: rotate(90deg);
+    .container:hover .box {
+      
     }
   </style>
 </head>
@@ -29,4 +27,5 @@
     <div class="box"></div>
   </div>
 </body>
+
 </html>
