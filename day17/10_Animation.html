@@ -6,26 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .container {
-      background-color: #7ae872;
-    }
     /* transition只能定义开始和结束状态 */
     .box {
-      position: relative;
-      left: 0;
       width: 200px;
       height: 100px;
-      background-color: #c52020;
-    }
-    .container:hover .box {
+      background-color: #cc0d0d;
       
+      /* animation-delay: 2s;
+      animation-name: moveAnim ;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out; */
+      /* 动画执行的次数 */
+      /* animation-iteration-count: 2;
+      animation-duration: reverse; */
+      /* 元素最终停留在哪个位置 */
+      /* animation-fill-mode: forwards; */
+      /* 简写属性 */
+      animation: movieAnim 3s linear 2s ;
     }
+    @keyframes moveAnim {
+      0%{
+        transform: translate(0,0);
+      }
+      33%{
+        transform: translate(0,200px);
+      }
+      66%{
+        transform: translate(400px,200px);
+      }
+      100%{
+        transform: translate(400px,0);
+      }
+    }
+    
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="box"></div>
-  </div>
+  <div class="box"></div>
 </body>
 
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      background-color: brown;
+    }
+    /* 给行内级元素设置vertical-align */
+    img{
+      /* vertical-align: top; */
+      vertical-align: middle;
+    }
+     .small{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    hhh
+    <img src="../image/hot.png" alt="">
+    <!-- 当行盒有文本时 基线变成最后一行文本的基线 -->
+    <span class="small">Vue 被设计为便</span>
+  </div>
+</body>
+</html>
