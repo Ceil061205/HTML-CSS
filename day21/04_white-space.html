@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: hsl(0, 56%, 38%);
+      /* 不换行默认是normal 合并所有连续空白 */
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <!-- 用于设置空白处理和换行规则 -->
+   <div class="box">
+      111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+      2222
+   </div>
+</body>
+</html>
