@@ -1,0 +1,23 @@
+.box_border,
+.box {
+  border: 1px solid #23ae77;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+}
+.box {
+  color: #87ceeb;
+  width: 1.04166667in;
+  font-size: 10px;
+}
+.box {
+  color: #fff;
+}
+.box .item {
+  width: 100px;
+  height: 100px;
+  color: #3456ab;
+}
+/* */

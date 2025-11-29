@@ -1,0 +1,13 @@
+.box {
+  font-size: 14px;
+}
+.box h1 .keyword {
+  color: #a04427;
+  font-size: 16px;
+}
+.box p {
+  font-size: 12px;
+}
+.box p .lnk {
+  color: #a04427;
+}

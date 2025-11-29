@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- width是设置布局视口的默认情况下980ox 数值越大东西缩放越小-->
+   <!-- device-width:
+    设备宽度，也就是屏幕的宽度
+    initial-scale=1.0:
+    初始缩放比例，1.0表示不缩放，也就是原始大小
+    user-scalable=no:
+    不允许用户手动缩放，也就是不允许用户放大缩小页面
+    minimum-scale=1.0:
+    允许用户缩放的最小比例，1.0表示不允许缩小
+    maximum-scale=1.0:  
+    允许用户缩放的最大比例，1.0表示不允许放大
+   -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scaleble=no,minimum-scale=1.0,maximum-scale=1.0">
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+  布局视口:
+    默认980px，但是随着设备的不同而不同
+    可视区域的大小，在移动端浏览器上，布局视口通常比屏幕宽很多 
+  视觉视口:
+    用户在当前屏幕上看到的区域大小
+  视觉视口的大小是固定的，但是布局视口的宽度可以改变
+  -->
+  <div class="box"></div>
+</body>
+</html>
