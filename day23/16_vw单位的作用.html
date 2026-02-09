@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--
+      rem
+      1.动态设置html的font-size
+      font-size: 视口的宽度 / 10
+      2.换算成rem的单位
+  -->
+
+  <!-- 
+    vw相对于rem的优势:
+    1.不需要动态设置html的font-size
+    2.不需要换算成rem的单位
+    3.vw相对于rem更加语义化:相对于屏幕的百分之几
+    4.兼具了rem的所有优势
+  -->
+  <style>
+    /* html {
+      font-size: 10vw;
+    } */
+    .box {
+      /* 100/37.5 * 10vw */
+      width: 26.667vw;
+      height: 26.667vw;
+      background-color: red;
+    }
+    p {
+      font-size: 3.733rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+   
+  </div>
+  <p>pp</p>
+  
+</body>
+</html>

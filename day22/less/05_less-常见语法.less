@@ -1,0 +1,35 @@
+// 定义变量
+@mainColor: #a04427;
+@smallFontSize: 12px;
+@normalFontSize: 14px;
+@bigFontSize: 16px;
+
+// .box .pel{
+//   color: @mainColor;
+//   font-size: @normalFontSize;
+// }
+// .box h1 .keyword{
+//   color: @mainColor;
+//   font-size: @bigFontSize;
+// }
+// .box p .lnk{
+//   color: @mainColor;
+//   font-size: @smallFontSize;
+// }
+
+// 嵌套规则
+.box {
+  font-size: @normalFontSize;
+  h1{
+    .keyword{
+      color: @mainColor;
+      font-size: @bigFontSize;
+    }
+  }
+  p{
+    font-size: @smallFontSize;
+    .lnk{
+      color: @mainColor;
+    }
+  }
+}

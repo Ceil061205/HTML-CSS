@@ -1,0 +1,33 @@
+.box_border{
+    border: 1px solid #23ae77;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    // .box_border();
+    &:extend(.box_border);
+
+}
+// less内置函数
+.box{
+  color: color(skyblue);// 颜色函数
+
+  width: convert(100px, 'in');// 单位转换函数
+
+  font-size: floor(10.9px);// 取整函数
+}
+// 作用域 先在当前作用域查找，找不到再去全局查找
+@mainColor: #23ae77;
+.box{
+  @mainColor: #ff0000;
+    color: #fff;
+    .item{
+      width: 100px;
+      height: 100px;
+        color: @mainColor;
+        @mainColor: #3456ab;
+    }
+}
+// 注释
+/* */
